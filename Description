@@ -1,0 +1,41 @@
+The program should accept several command line arguments:
+
+--system
+        to indicate that only the system usage should be generated
+
+
+--user
+
+        to indicate that only the users usage should be generated
+
+
+--graphics
+
+        to include graphical output in the cases where a graphical outcome is possible as indicated below.
+
+
+--samples=N
+
+        if used the value N will indicate how many times the statistics are going to be collected and results will be average and reported based on the N number of repetitions.
+If not value is indicated the default value will be 10.
+
+
+--tdelay=T
+
+        to indicate how frequently to sample in seconds.
+If not value is indicated the default value will be 1 sec.
+
+ 
+
+The last two arguments can also be considered as positional arguments if not flag is indicated in the corresponding order: samples tdelay.
+
+
+The reported "stats" should include:
+
+ user usage
+ report how many users are connected in a given time
+ report how many sessions each user is connected to
+ system usage
+report how much utilization of the CPU is being done
+report how much utilization of memory is being done (report used and free memory)
+if the --graphics flag is used, generate a graphical representation showing the variation of memory used
